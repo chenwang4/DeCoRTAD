@@ -1,0 +1,36 @@
+Train: 
+    n_epoch: 60
+    lrate: 0.0005
+    device: "mps"
+    batch_size: 128
+
+  
+Data:
+    dataset: 'grid_world'
+    state_size: 24
+    action_size: 4
+    feat_size: 28
+    seq_len: 21
+    step_size: 2
+    pre_win_len: 4
+    cur_win_len: 8
+
+Evaluation:
+    n_epoch: 500
+    lrate: 0.001
+    device: "mps"
+    batch_size: 32
+
+AIS_Data:
+    dataset: 'AIS'
+    feat_size: 4
+    win_len: 90
+    step_size: 5
+    
+Chengdu_Data:
+    dataset: 'Chengdu Taxi'
+    feat_size: 3
+    pre_win_len: 40
+    cur_win_len: 80
+    step_size: 5
+    
